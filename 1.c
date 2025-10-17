@@ -22,24 +22,16 @@ int main()
     percentage = (float)total / 5;
 
     min = m1;
-    if (m2 < min)
-        min = m2;
-    if (m3 < min)
-        min = m3;
-    if (m4 < min)
-        min = m4;
-    if (m5 < min)
-        min = m5;
+    if (m2 < min) min = m2;
+    if (m3 < min) min = m3;
+    if (m4 < min) min = m4;
+    if (m5 < min) min = m5;
 
     max = m1;
-    if (m2 > max)
-        max = m2;
-    if (m3 > max)
-        max = m3;
-    if (m4 > max)
-        max = m4;
-    if (m5 > max)
-        max = m5;
+    if (m2 > max) max = m2;
+    if (m3 > max) max = m3;
+    if (m4 > max) max = m4;
+    if (m5 > max) max = m5;
 
     printf("\n----Student Result----\n");
     printf("Subject 1: %d\n", m1);
@@ -56,30 +48,12 @@ int main()
     {
         printf("Result = Pass\n");
 
-        if (percentage >= 90)
-        {
-            printf("Grade = A+\n");
-        }
-        else if (percentage >= 75)
-        {
-            printf("Grade = A\n");
-        }
-        else if (percentage >= 60)
-        {
-            printf("Grade = B\n");
-        }
-        else if (percentage >= 50)
-        {
-            printf("Grade = C\n");
-        }
-        else if (percentage >= 40)
-        {
-            printf("Grade = D\n");
-        }
-        else
-        {
-            printf("Grade = E\n");
-        }
+        if (percentage >= 90) printf("Grade = A+\n");
+        else if (percentage >= 75) printf("Grade = A\n");
+        else if (percentage >= 60) printf("Grade = B\n");
+        else if (percentage >= 50) printf("Grade = C\n");
+        else if (percentage >= 40) printf("Grade = D\n");
+        else printf("Grade = E\n");
     }
     else
     {
@@ -88,4 +62,5 @@ int main()
     }
 
     return 0;
+
 }
